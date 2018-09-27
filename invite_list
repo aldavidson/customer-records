@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# pass through all cmd-line args
+bundle exec ruby invite_list.rb "$@"

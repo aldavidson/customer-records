@@ -98,3 +98,11 @@ RSpec.configure do |config|
   Kernel.srand config.seed
 =end
 end
+
+require_relative '../app_setup'
+
+require 'simplecov'
+SimpleCov.start do
+  add_filter '/config/'
+  add_filter '/spec/'
+end

@@ -1,3 +1,54 @@
+
+# invite_list
+
+Parse the given customer list, and output any within 100km of the Dublin office,
+sorted by ascending user_id.
+
+Author:
+  Al Davidson (apdavidson@gmail.com / https://github.com/aldavidson)
+
+## Requirements:
+
+- ruby 2.5.1
+  (Developed on 2.5.1, in principle should be OK on any 2.x version,
+  but this has not been tested)
+
+- rubygems
+  (should be installed as part of any Ruby version 1.9 or greater)
+
+- bundler
+(https://bundler.io/)
+
+## To setup:
+  (From the root directory of the repository)
+
+  > bundle install
+
+## Usage:
+
+From the root directory of this repository, type:
+
+```bash
+./invite_list (options)
+```
+
+You can also run the ruby file manually if you want to:
+
+```
+bundle exec ruby invite_list.rb (options)
+```
+
+In either case, cmd-line options are:
+
+- -h or --help
+  (optional) Show help & usage info
+- filename
+  (optional) Filename to process.
+  Defaults to sample_data/customers.txt
+  which is the given sample from the brief
+
+# Brief as given
+
 ## Customer Records
 
 We have some customer records in a text file (customers.txt) -- one customer per line, JSON lines formatted. We want to invite any customer within 100km of our Dublin office for some food and drinks on us. Write a program that will read the full list of customers and output the names and user ids of matching customers (within 100km), sorted by User ID (ascending).
