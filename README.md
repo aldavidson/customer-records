@@ -10,8 +10,8 @@ Author:
 ## Requirements:
 
 - ruby 2.5.1
-  (Developed on 2.5.1, in principle should be OK on any 2.x version,
-  but this has not been tested)
+  (Developed on 2.5.1 under rbenv, in principle should be OK on any 2.x version,
+  but I have only tested it on 2.5.1)
 
 - rubygems
   (should be installed as part of any Ruby version 1.9 or greater)
@@ -44,8 +44,22 @@ In either case, cmd-line options are:
   (optional) Show help & usage info
 - filename
   (optional) Filename to process.
-  Defaults to sample_data/customers.txt
+  Defaults to `sample_data/customers.txt`,
   which is the given sample from the brief
+
+### Example:
+
+```bash
+# process the default (given) file sample_data/customers.txt
+./invite_list
+
+# process the file /tmp/my-other-file:
+./invite_list /tmp/my-other-file
+```
+
+## To run tests:
+
+`bundle exec rspec`
 
 # Brief as given
 
